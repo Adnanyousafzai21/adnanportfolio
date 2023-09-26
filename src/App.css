@@ -12,7 +12,7 @@
 
 body {
 
-  background-color: #102128;
+  background-color: #236065;
 }
 
 :root {
@@ -25,7 +25,8 @@ body {
   --buttontext: #ffffff;
   /* --backgroun: #102128; */
   /* --backgroun:#131a24; */
-  --backgroun: #0f151d;
+  /* --backgroun: #0f151d; */
+  --backgroun: #131a24;
   --boxshadow: 0 3px 3px -2px rgba(150, 147, 147, 0.2), 0 2px 2px 0 rgba(187, 182, 182, 0.14), 0 1px 5px 0 rgba(130, 123, 123, 0.12);
   --buttonradius: 5px;
   --boxshadowhover: 0 3px 3px -2px rgba(176, 171, 171, 0.2), 0 2px 2px 0 rgba(187, 182, 182, 0.14), 0 1px 5px 0 rgba(159, 155, 155, 0.12);
