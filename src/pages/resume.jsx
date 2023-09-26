@@ -5,7 +5,7 @@ const Resume = () => {
   return (
     <div>
       <Navbar>
-        <section className="resume-container">
+        {/* <section className="resume-container">
           <div className="education">
             <h2>Education</h2>
             <div className="education-item">
@@ -39,23 +39,17 @@ const Resume = () => {
           </div>
           <div className="skills">
             <h2>Skills</h2>
-            <div className="skills-list">
-              <div className="skill-item">Html</div>
-              <div className="skill-item">CSS</div>
-              <div className="skill-item">Bootstrap</div>
-              <div className="skill-item">Material UI</div>
-              <div className="skill-item with-range" data-range="50%">
-                Ant-design
-              </div>
-              <div className="skill-item">Vuetify</div>
-              <div className="skill-item">JavaScript</div>
-              <div className="skill-item">React.js</div>
-              <div className="skill-item">Vue.js</div>
-              <div className="skill-item with-range" data-range="50%">
-                Python
-              </div>
             </div>
-          </div>
+            <div className="skills-list">
+   
+          <div className="skill-item">TypeScript</div>
+          <div className="skill-item">Next.js</div>
+          <div className="skill-item">Tailwind CSS</div>
+          <div className="skill-item">Node.js</div>
+          <div className="skill-item">Express.js</div>
+          <div className="skill-item">MongoDB</div>
+        </div>
+    
           <div className="experience">
             <h2>Experience</h2>
             <div className="experience-item">
@@ -77,7 +71,10 @@ const Resume = () => {
               </p>
             </div>
           </div>
-        </section>
+        </section> */}
+        {/* <h1</h3> */}
+        <h1 style={{color:"#fff"}}>Comming Soon.............</h1>
+        
       </Navbar>
     </div>
   );
