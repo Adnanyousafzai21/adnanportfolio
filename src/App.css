@@ -21,7 +21,7 @@ body {
   --heading: #ffffff;
   --buttonhover: #000;
   --headletterspace: 3px;
-  --buttoncolor: #4070f4;
+  --buttoncolor: #87ceeb;
   --buttontext: #ffffff;
   /* --backgroun: #102128; */
   /* --backgroun:#131a24; */
@@ -105,7 +105,7 @@ body {
   font-weight: 100;
   /* top: -8px; */
   font-size: 15px;
-  color: skyblue;
+  color: #87ceeb;
 }
 
 .hero-left .headtext p::after {
@@ -244,16 +244,13 @@ body {
   background-color: var(--backgroun);
   padding: 50px 40px;
   width: 90%;
-
 }
-
 .navleft {
   border-radius: 10px;
 }
 
 .about-us {
   border-radius: 10px;
-
 }
 
 .pic {
@@ -325,7 +322,7 @@ span {
 .card-contianer {
   width: 100%;
   display: flex;
-  gap: 60px;
+  gap: 50px;
   flex-wrap: wrap;
   justify-content: center;
 
@@ -334,7 +331,7 @@ span {
 .card {
   box-shadow: var(--boxshadow);
   transition: 0.3s;
-  width: 27%;
+  width: 28%;
   border-radius: 10px;
   padding: 10px;
 
@@ -544,7 +541,7 @@ button:hover {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width:1000px) {
   .navmain{
     flex-direction: column;
   }
@@ -561,6 +558,14 @@ button:hover {
     height: 40px;
     align-items: center;
     justify-content: space-between;
+    padding: 5px 50px ;
+  }
+  .card{
+    width: 35%;
+    
+  }
+  .card-contianer {
+    gap: 40px;
   }
   .children {
     width: 100%;
@@ -569,7 +574,7 @@ button:hover {
     padding: 20px;
   }
   .navleft{
-    height: 80px;
+    max-height: 80px;
     overflow: hidden;
   }
 }
@@ -581,12 +586,7 @@ button:hover {
     width: 95%;
     margin-top: -200px;
   }
-.namelink{
-  /* display: none !important; */
-}
-/* .iconlink{
-  display: inline;
-} */
+
 .nav .list a{
   width: 70px;
   font-size: 12px;
@@ -630,7 +630,10 @@ button:hover {
     
     padding: 20px 10px;
   }
-  
+  .nav .list{
+    padding: 5px 0px;
+    gap: 10px;
+  }
   /* .nav .list{
     flex-direction: row;
     height: 40px;
