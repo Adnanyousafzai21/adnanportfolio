@@ -2,9 +2,9 @@ import React from "react";
 import { BiLogoFacebook } from "react-icons/bi";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { BiLogoInstagram } from "react-icons/bi";
-import {BsTelephone} from "react-icons/bs"
-import {HiOutlineMail} from "react-icons/hi"
-import {CiLocationOn} from "react-icons/ci"
+import { BsTelephone } from "react-icons/bs";
+import { HiOutlineMail } from "react-icons/hi";
+import { CiLocationOn } from "react-icons/ci";
 const Herosection = () => {
   return (
     <>
@@ -16,7 +16,7 @@ const Herosection = () => {
           <div className="headtext">
             <h1>adnan rafiq</h1>
             <div className="animation">
-              <p>Mern Stack developer</p> 
+              <p>A software Engineer</p>
             </div>
 
             <div className="socialmidia">
@@ -36,27 +36,24 @@ const Herosection = () => {
         <div className="right">
           <div className="phoneandemail">
             <p>
-            <HiOutlineMail/> <span> Email : </span>
+              <HiOutlineMail /> <span> Email : </span>
               <br />
               www.adnanrafiq@gamil.com
             </p>
             <p>
-            <BsTelephone/>  <span>Phone : </span>
+              <BsTelephone /> <span>Phone : </span>
               <br /> 03077522229
             </p>
           </div>
-          <div className="location"> 
-          <p>
-             
-         <CiLocationOn/>   <span>Location : </span>
+          <div className="location">
+            <p>
+              <CiLocationOn /> <span>Location : </span>
               <br /> karachi, pakistan
             </p>
             <p>
-             
-            <HiOutlineMail/> <span>Email : </span>
+              <HiOutlineMail /> <span>Email : </span>
               <br /> www.adnanrafiq@gamil.com
             </p>
-           
           </div>
         </div>
       </div>

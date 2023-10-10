@@ -606,11 +606,16 @@ button:hover {
   .right {
     flex-direction: column;
     gap: 0px;
-    margin-top: 15px;
   }
-  .right .location p {
+  .right .location p:last-child {
     display: none;
+  
   }
+  .right .location{
+    margin-top: -20px;
+    width: 100%;
+  }
+ 
 
   /* .navmain{
     flex-direction: column;
@@ -635,12 +640,7 @@ button:hover {
     padding: 5px 0px;
     gap: 10px;
   }
-  /* .nav .list{
-    flex-direction: row;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
-  } */
+ 
   .card-contianer{
     flex-direction: column;
     align-items: center;
