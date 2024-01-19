@@ -1,4 +1,3 @@
-// import React, { Children } from "react";
 import Header from "./Header";
 import About from "../pages/About";
 import Herosection from "./Herosection";

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 // import {ecomrce} from "../components/images/e-comrace.PNG"
 
 const Work = () => {
+
   const data = [
     {
       id: 1,
@@ -14,6 +15,17 @@ const Work = () => {
       techname: "Nextjs Redux",
       discription:
         "I made this website with tailwind css Nextjs , redux I also created the same project with react redux and tailwind css but not published yet",
+    },
+    {
+      id: 7,
+
+      imag: "/images/social media.PNG",
+      link: "https://socailmediaapp.vercel.app/",
+      proname: "social media app",
+      techname: "React, node, mongodb",
+      discription:
+        "this is under development is has still have some functionalty missing comming verry soon",
+    
     },
     {
       id: 2,
@@ -52,15 +64,7 @@ const Work = () => {
       discription:
         "I made this website with tailwind css Nextjs , redux I also created the same project with react redux and tailwind css but not published yet",
     },
-    {
-      id: 6,
-      imag: "/images/resturnt.PNG",
-      link: "https://adnan-react-app.netlify.app/",
-      proname: "Resturant ui",
-      techname: "Reactjs",
-      discription:
-        "I made this website with tailwind css Nextjs , redux I also created the same project with react redux and tailwind css but not published yet",
-    },
+ 
   ];
 
   return (
