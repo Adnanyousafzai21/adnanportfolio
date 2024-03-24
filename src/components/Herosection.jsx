@@ -26,10 +26,10 @@ const Herosection = () => {
               <Link to="https://www.linkedin.com/in/adnan-rafiq-b18a61220/">  <BiLogoLinkedin className="socialmediaapp"/> </Link>
               </div>
               <div>
-                <BiLogoFacebook className="socialmediaapp" /> <Link to="https://www.facebook.com/adanan.khan.545?mibextid=ZbWKwL"></Link>
+     <Link to="https://www.facebook.com/adanan.khan.545?mibextid=ZbWKwL">            <BiLogoFacebook className="socialmediaapp" /></Link>
               </div>
               <div>
-                <BiLogoInstagram className="socialmediaapp" /> <Link to=""></Link>
+ <Link to="https://www.instagram.com/adnanrafiq309?igsh=MXNkcGQzMzV2emdqeA==">               <BiLogoInstagram className="socialmediaapp" /> </Link>
               </div>
               <div>
                 <BiLogoTiktok className="socialmediaapp" /> <Link to="https://www.tiktok.com/@adnan_rafiq1?_t=8kwsgjViUL9&_r=1"></Link>
