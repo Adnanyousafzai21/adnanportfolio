@@ -37,14 +37,23 @@ const Work = () => {
         "I made this website with tailwind css Nextjs , redux I also created the same project with react redux and tailwind css but not published yet",
     },
     {
-      id: 3,
-      imag: "/images/firstpotfolio.PNG",
-      link: "https://adnanyousafzai21.github.io/adnan-app/",
-      proname: "Frist portpolio",
-      techname: "Nextjs Redux",
+      id: 8,
+      imag: "/images/joobseeker.PNG",
+      link: "https://jobseekerfrontend.vercel.app",
+      proname: "Job Seeker",
+      techname: "MERN stack",
       discription:
-        "I made this website with tailwind css Nextjs , redux I also created the same project with react redux and tailwind css but not published yet",
+        "Included each and every functionallity ,like post edit delete job and application include role for both employee and jobseeker and many more",
     },
+    // {
+    //   id: 3,
+    //   imag: "/images/firstpotfolio.PNG",
+    //   link: "https://adnanyousafzai21.github.io/adnan-app/",
+    //   proname: "Frist portpolio",
+    //   techname: "Nextjs Redux",
+    //   discription:
+    //     "I made this website with tailwind css Nextjs , redux I also created the same project with react redux and tailwind css but not published yet",
+    // },
     {
       id: 4,
       imag: "/images/todo.PNG",

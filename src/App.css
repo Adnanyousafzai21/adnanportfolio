@@ -33,10 +33,11 @@ body {
 }
 
 .heromain {
-  background-image: url("/images/tech-4.jfif");
-  background-size: contain;
+  background-image: url("/images/tech9.jpeg");
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 60vh;
+  height: 50vh;
+  /* position: fixed; */
   background-position: fixed;
 }
 
@@ -551,8 +552,12 @@ button:hover {
     justify-content: center;
     padding: 10px;
     position: relative;
+    
     align-items: center;
 
+  }
+  .heromain{
+    height: 30vh;
   }
   .nav .list{
     flex-direction: row;
@@ -587,7 +592,9 @@ button:hover {
     width: 95%;
     margin-top: -200px;
   }
-
+.header{
+  margin-top: 200px;
+}
 .nav .list a{
   width: 70px;
   font-size: 12px;
