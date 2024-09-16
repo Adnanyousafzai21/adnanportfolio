@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Herosection from './components/Herosection'
 import Header from './components/Header'
-import { BrowserRouter, Route, Routes  } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Navbar from './components/navbar'
 import About from './pages/About'
 import Work from './pages/Work'
@@ -15,16 +15,18 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
+      <BrowserRouter>
 
-    <div className="heromain"></div>
-<Routes>
-  <Route path='/' element={<About/>}/>
-  <Route path="/pages/work" element={<Work/>}/>
-  <Route path="/pages/resume" element={<Resume/>}/>
-  <Route path="/pages/contact" element={<Contact/>}/>
-</Routes>
- </BrowserRouter>
+        {/* <div className="heromain"></div> */}
+        <div className="max-w-[1520px] mx-auto">
+          <Routes>
+            <Route path='/' element={<About />} />
+            <Route path="/pages/work" element={<Work />} />
+            <Route path="/pages/resume" element={<Resume />} />
+            <Route path="/pages/contact" element={<Contact />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
     </>
   )
 }

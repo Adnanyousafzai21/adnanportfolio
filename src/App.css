@@ -22,59 +22,82 @@ body {
   --buttonhover: #000;
   --headletterspace: 3px;
   --buttoncolor: #87ceeb;
+  --headershadow: #222222;
   --buttontext: #ffffff;
   /* --backgroun: #102128; */
   /* --backgroun:#131a24; */
   /* --backgroun: #0f151d; */
   --backgroun: #131a24;
+  --backgrounbtn: #131a243f;
+  --backgrounblure: #131a24e8;
   --boxshadow: 0 3px 3px -2px rgba(150, 147, 147, 0.2), 0 2px 2px 0 rgba(187, 182, 182, 0.14), 0 1px 5px 0 rgba(130, 123, 123, 0.12);
   --buttonradius: 5px;
   --boxshadowhover: 0 3px 3px -2px rgba(176, 171, 171, 0.2), 0 2px 2px 0 rgba(187, 182, 182, 0.14), 0 1px 5px 0 rgba(159, 155, 155, 0.12);
 }
-
-.heromain {
-  background-image: url("/images/tech9.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 50vh;
-  /* position: fixed; */
-  background-position: fixed;
+p{
+  color:var(--para)
+}
+h1, h2 ,h3{
+  color: var(--heading);
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #777777;
+  /* Light gray background */
+  border-radius: 10px;
+  /* Rounded corners for the track */
+  margin: 2px;
+  /* Optional: adds some space between the scrollbar and the content */
+}
+
+::-webkit-scrollbar-thumb {
+  /* background-color: #87ceeb; */
+  background-color: #111111;
+  /* Light blue color for the thumb */
+  border-radius: 10px;
+  /* Rounded corners for the thumb */
+  border: 2px solid #999999   ;
+  /* Border around the thumb matching the track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #000000;
+  /* Darker blue on hover */
+}
+
+/* Firefox-specific scrollbar styling */
+.card-contianer {
+
+  border-radius: 10px;
+
+}
+
+
 .portfolio {
-  width: 90%;
+  width: 100%;
   margin: auto;
-  top: -80px;
   position: relative;
 }
 
 .header {
   width: 100%;
-  border-radius: 8px;
-  padding: 15px 35px;
-  display: flex;
-  justify-content: space-between;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 5px 35px;
   background-color: var(--backgroun);
   color: white;
-}
-
-.hero-left {
-  display: flex;
-  gap: 40px;
-  padding: 0px 15px;
-  align-items: center;
-  padding-right: 60px;
-}
-
-.hero-left .image {
-  border-radius: 50%;
-  overflow: hidden;
-  width: 170px;
-  height: 170px;
-  top: -100px;
+  box-shadow: 0px 0px 10px 1px var(--headershadow);
   position: relative;
-  border: 2px solid var(--backgroun);
+  z-index: 99px;
+
+
 }
+
 
 .hero-left .image img {
   width: 100%;
@@ -89,7 +112,7 @@ body {
 .hero-left .headtext {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 3px;
   position: relative;
 }
 
@@ -101,7 +124,7 @@ body {
   letter-spacing: 3px;
 }
 
-.hero-left .headtext p {
+.right p {
   color: var(--paralight);
   position: relative;
   font-weight: 100;
@@ -110,7 +133,7 @@ body {
   color: #87ceeb;
 }
 
-.hero-left .headtext p::after {
+.right p::after {
   content: "";
   position: absolute;
   left: 0;
@@ -139,19 +162,56 @@ body {
   position: relative;
 }
 
-
-.socialmidia {
-  display: flex;
-  gap: 20px;
-  top: 10px;
-  position: relative;
+.sticky-header__available-circle {
+  position: absolute;
+  /* Keeps it within the parent */
+  top: 50%;
+  /* Centers vertically */
+  left: 0;
+  transform: translateY(-50%);
+  /* Centers vertically */
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  /* border: 2px solid rgb(255, 255, 255); */
+  border-radius: 50%;
+  background-color: rgb(77, 170, 87);
 }
+
+.sticky-header__available-circle::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: circle-pulse 2s ease infinite;
+  /* Smooth animation */
+  box-shadow: 0 0 0 0 rgba(77, 170, 87, 0.7);
+}
+
+/* Define keyframes for the pulse animation */
+@keyframes circle-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(77, 170, 87, 0.7);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(77, 170, 87, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(77, 170, 87, 0);
+  }
+}
+
 
 .socialmediaapp {
   font-size: 30px;
-  box-shadow: 1px 1px 8px 3px skyblue;
+  box-shadow: 0px 0px 0px 1px rgba(135, 207, 235, 0.596);
   border-radius: 8px;
-  color: #ffffff;
+
   transition: all 0.5s linear;
 }
 
@@ -175,7 +235,7 @@ body {
   margin-bottom: 10px;
   color: var(--paralight);
   font-weight: 300;
-  margin:10px 0px
+  margin: 10px 0px
 }
 
 .midle {
@@ -188,40 +248,39 @@ body {
 
 
 .nav {
-  padding: 20px;
-  border-radius: 10px;
-  height: 300px;
+
+  border-bottom-left-radius: 10px;
   background-color: var(--backgroun);
+  box-shadow: 0px 0px 10px 1px var(--headershadow);
+  /* position: relative;
+  z-index: 99px; */
 }
-.iconlink{
+
+.iconlink {
   display: none;
 }
-.nav .list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  /* align-items: ; */
-  height: 100%;
-  /* gap: 120px; */
-  list-style: none;
-}
+
+
 
 .nav .list a {
   text-decoration: none;
   color: var(--buttontext);
-  text-align: center;
-  padding: 10px;
-  width: 100px;
-  box-shadow: var(--boxshadow);
+  box-shadow: 0 0 10px 5px var(--boxshadowhover);
+  /* Even shadow from all sides */
+  background-color: #0000003d;
   border-radius: var(--buttonradius);
-  /* border: 1px solid transparent; */
+  border: 1px solid transparent;
   transition: all 0.5s linear;
 }
 
-.nav .list a:hover {
-  border: 1px solid var(--buttoncolor);
-  background-color: #000;
 
+.nav .list a:hover {
+  background-color: #000000
+}
+
+.nav .list .active {
+  /* border: 1px solid var(--buttoncolor); */
+  background-color: #000000
 }
 
 .border {
@@ -237,20 +296,18 @@ body {
   display: flex;
   width: 100%;
   margin: 0px auto;
-  margin-top: 15px;
+  /* margin-top: 15px; */
 
 }
 
 .children {
   margin-left: 10px;
-  border-radius: 10px;
-  background-color: var(--backgroun);
-  padding: 50px 40px;
+  background-color: var(--backgrounblure);
+  /* padding: 50px 40px; */
   width: 90%;
+  border-bottom-right-radius: 10px;
 }
-.navleft {
-  border-radius: 10px;
-}
+
 
 .about-us {
   border-radius: 10px;
@@ -536,51 +593,53 @@ button:hover {
   .flex-container {
     flex-direction: column;
   }
-  .midle{
+
+  .midle {
     display: none;
   }
+
   .map {
     order: 2;
   }
 }
 
 @media (max-width:1000px) {
-  .navmain{
+  .navmain {
     flex-direction: column;
   }
+
   .header {
     flex-direction: column;
     justify-content: center;
     padding: 10px;
     position: relative;
-    
+
     align-items: center;
 
   }
-  .heromain{
+
+  .heromain {
     height: 30vh;
   }
-  .nav .list{
-    flex-direction: row;
-    height: 40px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px 50px ;
+
+
+  .card {
+    width: 250px;
+
   }
-  .card{
-    width: 35%;
-    
-  }
+
   .card-contianer {
     gap: 40px;
   }
+
   .children {
     width: 100%;
     margin-left: 0;
     margin-top: 20px;
     padding: 20px;
   }
-  .navleft{
+
+  .navleft {
     max-height: 80px;
     overflow: hidden;
   }
@@ -593,13 +652,16 @@ button:hover {
     width: 95%;
     margin-top: -200px;
   }
-.header{
-  margin-top: 200px;
-}
-.nav .list a{
-  width: 70px;
-  font-size: 12px;
-}
+
+  .header {
+    margin-top: 200px;
+  }
+
+  .nav .list a {
+    /* width: 80px; */
+    font-size: 14px;
+  }
+
   .hero-left .image {
     top: 0px;
   }
@@ -610,57 +672,66 @@ button:hover {
     margin-top: -100px;
     align-items: center;
   }
-  
+
   .right {
     flex-direction: column;
     gap: 0px;
   }
+
   .right .location p:last-child {
     display: none;
-  
+
   }
-  .right .location{
+
+  .right .location {
     margin-top: -20px;
     width: 100%;
   }
- 
+
 
   /* .navmain{
     flex-direction: column;
   } */
-  .about{
+  .about {
     flex-direction: column;
     padding: 20px 0px;
   }
-  .about .text{
+
+  .about .text {
     text-align: center;
     padding: 0px 4px;
   }
-  .about .text p{
+
+  .about .text p {
     /* word-wrap:break-word; */
-    line-break:anywhere
+    line-break: anywhere
   }
+
   .children {
-    
+
     padding: 20px 10px;
   }
-  .nav .list{
+
+  .nav .list {
     padding: 5px 0px;
     gap: 10px;
   }
- 
-  .card-contianer{
+
+  .card-contianer {
     flex-direction: column;
     align-items: center;
     padding: 20px 0px;
   }
-  .card{
-    width: 70%;
+
+  .card {
+    width: 80%;
   }
-  .contact-fields{
+
+  .contact-fields {
     padding: 0px;
   }
-  .map{
+
+  .map {
     padding: 0px;
   }
 }

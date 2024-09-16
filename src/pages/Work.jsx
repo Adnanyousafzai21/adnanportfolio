@@ -25,7 +25,7 @@ const Work = () => {
       techname: "React, node, mongodb",
       discription:
         "this is under development is has still have some functionalty missing comming verry soon",
-    
+
     },
     {
       id: 2,
@@ -73,12 +73,11 @@ const Work = () => {
       discription:
         "I made this website with tailwind css Nextjs , redux I also created the same project with react redux and tailwind css but not published yet",
     },
- 
   ];
-
   return (
     <Navbar>
-      <div className="card-contianer">
+      <div className="card-contianer  
+      py-2 px-5 md:px-10">
         {data.map((item) => {
           return (
             <div className="card" key={item.id}>
@@ -92,7 +91,7 @@ const Work = () => {
                     View Project
                   </Link>
                   <Link to={item.link} className="link">
-                   see Detials
+                    see Detials
                   </Link>
                 </div>
               </div>
