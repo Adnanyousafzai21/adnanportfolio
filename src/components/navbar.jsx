@@ -15,8 +15,8 @@ const Navbar = ({ children }) => {
           <Header />
 
         </div>
-        <div className="children w-full m-0 p-0  lg:overflow-auto lg:h-[86vh]">
-          <div className="lg:overflow-auto lg:h-[75vh] my-5">
+        <div className="children w-full m-0 p-0  md:overflow-auto md:h-[86vh] bg-[#0e2527]">
+          <div className="lg:overflow-auto lg:h-[75vh] my-5 border">
             <ShootingStarsAndStarsBackgroundDemo>
             {children}
             </ShootingStarsAndStarsBackgroundDemo>
