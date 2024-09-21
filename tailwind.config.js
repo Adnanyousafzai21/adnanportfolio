@@ -1,19 +1,4 @@
-// /** @type {import('tailwindcss').Config} */
-// export default {
-//   content: [
-//     "./index.html",
-//     "./src/**/*.{js,ts,jsx,tsx}",
-//   ],
-//   theme: {
-//     extend: {},
-//   },
-//   plugins: [],
-// }
-
-
-
 const defaultTheme = require("tailwindcss/defaultTheme");
-
 const colors = require("tailwindcss/colors");
 const {
   default: flattenColorPalette,
@@ -21,24 +6,29 @@ const {
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  // content: ["./src/**/*.{ts,tsx}"],
   content: [
-        "./index.html",
-        "./src/**/*.{js,ts,jsx,tsx}",
-      ],
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   darkMode: "class",
   theme: {
-    // rest of the code
+    extend: {
+      screens: {
+        
+        'xsm': '400px',
+        ...defaultTheme.screens, 
+      },
+    
+    },
   },
   plugins: [addVariablesForColors],
 };
 
-function addVariablesForColors({
-  addBase,
-  theme
-}) {
+function addVariablesForColors({ addBase, theme }) {
   let allColors = flattenColorPalette(theme("colors"));
-  let newVars = Object.fromEntries(Object.entries(allColors).map(([key, val]) => [`--${key}`, val]));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
 
   addBase({
     ":root": newVars,

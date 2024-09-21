@@ -8,21 +8,21 @@ const About = () => {
   return (
     <Navbar>
       {/* <ShootingStarsAndStarsBackgroundDemo> */}
-      <section className=" w-full  flex justify-center  items-center lg:h-[450px] px-10">
-        <div className=" w-full flex flex-col lg:flex-row   justify-between items-center gap-5  lg:gap-10 ">
-          <div className="md:w-[350px] sm:w-[450px] w-[80%] relative z-10 ">
+      <section className=" w-full  flex justify-center h-atuo  items-center lg:h-[450px] xsm:px-10">
+        <div className=" w-full flex flex-col lg:flex-row   justify-between items-center gap-10 lg:gap-10 ">
+          <div className="md:w-[350px] sm:w-[450px] w-[100%] relative z-10 ">
             <ThreeDCardDemo />
           </div>
 
           <div className="md:w-[70%] w-full flex jusitfy-center bg-transparent relative z-10">
 
-            <div className="text">
+            <div className="text flex flex-col items-center sm:items-start">
               <h4>About Me</h4>
               <div></div>
               <h5>
                 Mern-Stack developer & <span>Designer</span>
               </h5>
-              <div style={{height:"150px"}}>
+              <div style={{ height: "150px" }}>
                 <TypeAnimation
                   sequence={[
                     " MY self Adnan Rafiq Mern-stack developer with a strong appetite for learning and growth.   👨‍💼  With almost a year of professional experience, including successful internships, 🛠️my expertise lies in TypeScript, JavaScript, React.js, and Next.js on the front-end. On the  back-end, I excel in  Node.js, Express.js and  MongoDB, 🎓 Currently, I'm in my final year ofpursuing a bachelor's degree in Computer Science, along with that have also completed comprehensive web and app development training at SMIT and am  exploring cutting-edge technologies like blockchain, web3, and the metaverse through PIAIC.",
@@ -41,13 +41,19 @@ const About = () => {
                   repeat={0}
                 />
               </div>
-              <div className="data">
+              <div className="data lg:block hidden">
                 <a href="#" className="hire">
                   Download CV
                 </a>
               </div>
             </div>
+          
           </div>
+          <div className="data lg:hidden mt-[30px]">
+              <a href="#" className="hire">
+                Download CV
+              </a>
+            </div>
         </div>
       </section>
       {/* </ShootingStarsAndStarsBackgroundDemo> */}
