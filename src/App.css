@@ -71,13 +71,27 @@ h1, h2 ,h3{
   /* Darker blue on hover */
 }
 
-/* Firefox-specific scrollbar styling */
 .card-contianer {
 
   border-radius: 10px;
 
 }
+.bg-pro{
+animation:non;
+  background: conic-gradient(from 90deg at 50% 50%, #ff7f50, var(--buttontext), rgba(235, 14, 14, 0.986), #00ff7f,  #dde010c9);
+}
+@keyframes rotateBackground {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
+.bg-pro-parent:hover, .bg-pro{
+  animation: rotateBackground 2s linear infinite;
+}
 
 .portfolio {
   width: 100%;
@@ -218,6 +232,7 @@ h1, h2 ,h3{
 
 .socialmediaapp:hover {
   transform: scale(1.1);
+  background:var(--buttoncolor);
 }
 
 .right {
@@ -267,11 +282,14 @@ h1, h2 ,h3{
   text-decoration: none;
   color: var(--buttontext);
   box-shadow: 0 0 10px 5px var(--boxshadowhover);
-  /* Even shadow from all sides */
   background-color: #0000003d;
   border-radius: var(--buttonradius);
   border: 1px solid transparent;
   transition: all 0.5s linear;
+  font-size: 14px;
+  padding:5px 10px;
+  margin:auto 5px;
+  gap:10px
 }
 
 
@@ -583,6 +601,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.5s linear;
+  
 }
 
 button:hover {
@@ -662,6 +681,9 @@ button:hover {
   .nav .list a {
     /* width: 80px; */
     font-size: 14px;
+    padding:5px 20px;
+    margin:auto 5px;
+    gap:15px
   }
 
   .hero-left .image {

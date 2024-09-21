@@ -100,7 +100,7 @@ const Work = () => {
 
 
 
-            <div class=" w-full lg:max-w-[30%] md:w-[40%] w-[280px]  card rounded-lg shadow   z-10 bg-[#131a24] ">
+            <div class=" w-full lg:max-w-[30%] md:w-[40%] xsm:w-[280px]  card rounded-lg shadow   z-10 bg-[#131a24] ">
 
               <img class=" w-full rounded-t-lg h-[200px]" src={item.imag} alt="product image" />
 

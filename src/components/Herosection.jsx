@@ -16,14 +16,24 @@ const Herosection = () => {
   return (
     <>
       <ShootingStarsAndStarsBackgroundDemo>
-        <div className="header flex flex-col gap-y-5 md:flex-row md:px-[20px] sm:px-[90px] w-full">
-          <div className=" md:hidden h-[80px] w-[80px] overflow-hidden rounded-full relative z-10">
-            <img src="/images/adnan4.jpg" alt="" className="w-full hover:scale-110 duration-700" />
+        <div className="header flex flex-col pb-10 md:pb-3 gap-y-8 md:flex-row md:px-[20px] sm:px-[90px] w-full">
+          <div className="relative  md:hidden  flex items-center w-[101px] lg:w-[83px] lg:h-[83px] h-[101px] overflow-hidden  justify-center bg-pro-parent">
+            <div className="w-full h-full rounded-full   absolute bg-pro ">
+            </div>
+            <div className="lg:h-[80px] lg:w-[80px] h-[100px] w-[100px] overflow-hidden relative rounded-full relative z-10">
+              <img src="/images/adnan4.jpg" alt="" className="w-full hover:scale-110 duration-700" />
+            </div>
+
           </div>
-          <div className="flex lg:flex-1  flex-col sm:flex-row gap-y-5 lg:w-full  items-center md:w-[70%]  w-full justify-between ">
+          <div className="flex lg:flex-1  flex-col sm:flex-row gap-y-8 lg:w-full  items-center md:w-[70%]  w-full justify-between ">
             <div className="flex  gap-x-10 items-center justify-between">
-              <div className=" hidden md:block h-[80px] w-[80px] overflow-hidden rounded-full relative z-10">
-                <img src="/images/adnan4.jpg" alt="" className="w-full hover:scale-110 duration-700" />
+              <div className="relative  md:w-[81px] md:h-[81px] md:block hidden  flex items-center  justify-center">
+                <div className="   rounded-full  w-full h-full  absolute bg-pro ">
+                </div>
+                <div className="md:h-[80px] md:w-[80px] h-[100px] w-[100px] overflow-hidden relative rounded-full relative z-10">
+                  <img src="/images/adnan4.jpg" alt="" className="w-full hover:scale-110 duration-700" />
+                </div>
+
               </div>
               <div className=" headtext text-[22px] m-0 p-0 relative z-10 " style={{ color: 'var(--heading)' }}>
                 <h1 className="text-[26px] text-center  sm:text-left capitalize">adnan rafiq</h1>
@@ -76,18 +86,27 @@ const Herosection = () => {
             </div>
             <div className="flex gap-5 sm:w-[235px] lg:w-auto">
               <div>
-                <Link to="https://www.linkedin.com/in/adnan-rafiq-b18a61220/"> <BiLogoLinkedin className="socialmediaapp" /> </Link>
+                <a href="https://www.linkedin.com/in/adnan-rafiq-b18a61220/" target="_blank" rel="noopener noreferrer">
+                  <BiLogoLinkedin className="socialmediaapp" />
+                </a>
               </div>
               <div>
-                <Link to="https://www.facebook.com/adanan.khan.545?mibextid=ZbWKwL"> <BiLogoFacebook className="socialmediaapp" /></Link>
+                <a href="https://www.facebook.com/adanan.khan.545?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
+                  <BiLogoFacebook className="socialmediaapp" />
+                </a>
               </div>
               <div>
-                <Link to="https://www.instagram.com/adnanrafiq309?igsh=MXNkcGQzMzV2emdqeA=="> <BiLogoInstagram className="socialmediaapp" /> </Link>
+                <a href="https://www.instagram.com/adnanrafiq309?igsh=MXNkcGQzMzV2emdqeA==" target="_blank" rel="noopener noreferrer">
+                  <BiLogoInstagram className="socialmediaapp" />
+                </a>
               </div>
               <div>
-                <Link to="https://www.tiktok.com/@adnan_rafiq1?_t=8kwsgjViUL9&_r=1">  <BiLogoTiktok className="socialmediaapp" /> </Link>
+                <a href="https://www.tiktok.com/@adnan_rafiq1?_t=8kwsgjViUL9&_r=1" target="_blank" rel="noopener noreferrer">
+                  <BiLogoTiktok className="socialmediaapp" />
+                </a>
               </div>
             </div>
+
           </div>
         </div>
       </ShootingStarsAndStarsBackgroundDemo>
