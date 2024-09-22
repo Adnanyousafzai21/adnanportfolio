@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BiLogoFacebook } from "react-icons/bi";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { BiLogoInstagram } from "react-icons/bi";
@@ -10,14 +10,21 @@ import { RiWhatsappLine } from "react-icons/ri";
 import { FaRegEye } from "react-icons/fa6";
 import { FaRegEyeSlash } from "react-icons/fa6";
 import { ShootingStarsAndStarsBackgroundDemo } from "./ShootingStarsAndStarsBackgroundDemonave";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Herosection = () => {
   const [view, setView] = useState(false)
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   return (
     <>
       <ShootingStarsAndStarsBackgroundDemo>
-        <div className="header flex flex-col pb-10 md:pb-3 gap-y-8 md:flex-row md:px-[20px]  sm:px-[90px] w-full">
-          <div className="relative  md:hidden  flex items-center w-[101px] lg:w-[83px] lg:h-[83px] h-[101px] overflow-hidden  justify-center bg-pro-parent">
+        <div className="header  flex flex-col pb-10 md:pb-3 gap-y-8 md:flex-row md:px-[20px]  sm:px-[90px] w-full">
+          <div className="relative  md:hidden  flex items-center w-[101px] lg:w-[83px] lg:h-[83px] h-[101px] overflow-hidden  justify-center bg-pro-parent"  data-aos="zoom-in-down">
             <div className="w-full h-full rounded-full   absolute bg-pro ">
             </div>
             <div className="lg:h-[80px] lg:w-[80px] h-[100px] w-[100px] overflow-hidden relative rounded-full relative z-10">
@@ -25,7 +32,7 @@ const Herosection = () => {
             </div>
 
           </div>
-          <div className="flex lg:flex-1  flex-col sm:flex-row gap-y-8 lg:w-full  items-center md:w-[70%]  w-full justify-between ">
+          <div className="flex lg:flex-1  flex-col sm:flex-row gap-y-8 lg:w-full  items-center md:w-[70%]  w-full justify-between "  data-aos="zoom-in">
             <div className="flex  gap-x-10 items-center justify-between">
               <div className="relative  md:w-[81px] md:h-[81px] md:block hidden  flex items-center  justify-center">
                 <div className="   rounded-full  w-full h-full  absolute bg-pro ">
@@ -75,7 +82,7 @@ const Herosection = () => {
               </div>
             </div>
           </div>
-          <div className="items-center flex relative flex-col justify-between sm:flex-row gap-y-5  md:justify-between  z-10 flex  gap-x-10  w-full lg:flex-1 md:w-[30%]">
+          <div className="items-center flex relative  flex-col justify-between sm:flex-row gap-y-5  md:justify-between  z-10 flex  gap-x-10  w-full lg:flex-1 md:w-[30%]"  data-aos="zoom-in-up">
             <div className="lg:ml-20 hidden sm:block md:hidden lg:block">
               <div className=" relative mb-1 flex  itemx-center justify-start gap-3 text-[14px]">
                 <IoLocationOutline className="text-[18px]" />  Karachi, Pakistan

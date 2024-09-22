@@ -16,15 +16,18 @@ function App() {
   return (
     <>
       <BrowserRouter>
-
-        {/* <div className="heromain"></div> */}
-        <div className="max-w-[1520px] mx-auto">
-          <Routes>
-            <Route path='/' element={<About />} />
-            <Route path="/pages/work" element={<Work />} />
-            <Route path="/pages/resume" element={<Resume />} />
-            <Route path="/pages/contact" element={<Contact />} />
-          </Routes>
+        <div className="portfolio pt-[4px] lg:h-screen  overflow-hidden  ">
+          <div className=" ">
+            <Herosection />
+          </div>
+          <div className="max-w-[1520px] mx-auto">
+            <Routes>
+              <Route path='/' element={<About />} />
+              <Route path="/pages/work" element={<Work />} />
+              <Route path="/pages/resume" element={<Resume />} />
+              <Route path="/pages/contact" element={<Contact />} />
+            </Routes>
+          </div>
         </div>
       </BrowserRouter>
     </>

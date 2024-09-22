@@ -82,9 +82,23 @@ h1, h2 ,h3{
 }
 
 
-
 .slide-up-animation {
   animation: slideUp 1s ease-out forwards;
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.slide-up-header-animation {
+  animation: slideUp 2s ease-out forwards;
 }
 
 

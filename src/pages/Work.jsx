@@ -83,11 +83,11 @@ const Work = () => {
   return (
     <Navbar>
       <div className="card-contianer  
-      py-2 sm:px-5 px-8 md:px-10 overflow-hidden z-20 relative slide-up-animation slide-up-animation">
+      py-2 sm:px-5 px-8 md:px-10 overflow-hidden z-20 relative ">
         {data.map((item) => {
           return (
             <>
-              <div className=" hidden lg:block w-full lg:max-w-[30%] md:w-[40%] xsm:w-[280px]  card rounded-lg shadow   z-20 bg-[#000000] sm:bg-[#101a24]" key={item.id} >
+              <div className=" hidden lg:block w-full lg:max-w-[30%] md:w-[40%] slide-up-animation xsm:w-[280px]  card rounded-lg shadow   z-20 bg-[#000000] sm:bg-[#101a24]" key={item.id} >
                 <img className=" w-full rounded-t-lg h-[200px]" src={item.imag} alt="product image" />
 
                 <div className="px-5 py-2 w-full">

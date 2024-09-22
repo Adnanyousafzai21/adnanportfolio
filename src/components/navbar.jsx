@@ -5,10 +5,8 @@ import { ShootingStarsAndStarsBackgroundDemo } from "./ShootingStarsAndStarsBack
 
 const Navbar = ({ children }) => {
   return (
-    <div className="portfolio pt-[4px] lg:h-screen  overflow-hidden  ">
-      <div className=" ">
-        <Herosection />
-      </div>
+
+     
 
       <div className="navmain flex flex-col md:flex-row w-full  overflow-hidden   ">
         <div className=" w-full md:w-[15%] md:h-[79vh] h-auto ">
@@ -23,7 +21,7 @@ const Navbar = ({ children }) => {
           </div>
         </div>
       </div>
-    </div>
+  
   );
 };
 
