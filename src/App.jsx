@@ -16,11 +16,11 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <div className="portfolio pt-[4px] lg:h-screen  overflow-hidden  ">
+        <div className="portfolio pt-[4px] lg:h-screen  overflow-hidden max-w-[2000px] ">
           <div className=" ">
             <Herosection />
           </div>
-          <div className="max-w-[1520px] mx-auto">
+          <div className=" mx-auto">
             <Routes>
               <Route path='/' element={<About />} />
               <Route path="/pages/work" element={<Work />} />
