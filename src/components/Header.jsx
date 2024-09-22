@@ -11,7 +11,7 @@ const Header = () => {
   const location = useLocation()
 
   return (
-    <nav className="nav md:py-10 py-2 px-3  md:h-[86vh] h-[70px] overflow-x-auto md:overflow-x-hidden md:my-0 my-1">
+    <nav className="nav md:py-10 py-2 px-3  md:h-[86vh]  overflow-x-auto md:overflow-x-hidden md:my-0 my-1">
 
       <ul className="list flex flex-row md:flex-col justify-start gap-5   min-w-[400px] md:min-w-[90%]">
 

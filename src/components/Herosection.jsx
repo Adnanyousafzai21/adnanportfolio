@@ -16,7 +16,7 @@ const Herosection = () => {
   return (
     <>
       <ShootingStarsAndStarsBackgroundDemo>
-        <div className="header flex flex-col pb-10 md:pb-3 gap-y-8 md:flex-row md:px-[20px] sm:px-[90px] w-full">
+        <div className="header flex flex-col pb-10 md:pb-3 gap-y-8 md:flex-row md:px-[20px]  sm:px-[90px] w-full">
           <div className="relative  md:hidden  flex items-center w-[101px] lg:w-[83px] lg:h-[83px] h-[101px] overflow-hidden  justify-center bg-pro-parent">
             <div className="w-full h-full rounded-full   absolute bg-pro ">
             </div>

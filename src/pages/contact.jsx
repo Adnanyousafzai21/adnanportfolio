@@ -1,11 +1,14 @@
 import React from "react";
 import Navbar from "../components/navbar";
+import LabelInputContainer from "../components/ui/LabelInputContainer";
+import { Label } from "../components/ui/label";
+import { Input } from "../components/ui/input";
 
 const Contact = () => {
   return (
     <div>
       <Navbar>
-        <div className="contact-container">
+        <div className="contact-container  bg-transparent relative z-10">
           <h2>Contact Us</h2>
           <div className="flex-container">
             <div className="map">
@@ -20,55 +23,67 @@ const Contact = () => {
               />
             </div>
             <form
-              className="contact-fields"
+              className="my-8 contact-fields"
               action="https://formspree.io/f/xgeqogka"
               method="POST"
               autoComplete="off"
             >
-              {/* <div > */}
-              {/* Add your contact fields here */}
-              <div className="form-group">
-                <input
+              <LabelInputContainer className="mb-4">
+                {/* <Label htmlFor="fullname">Full Name</Label> */}
+                <Input
                   type="text"
+                  className="focus:outline-none focus:ring-0 focus:border-transparent"
                   id="fullname"
                   name="fullname"
                   placeholder="Full Name"
                   required
                 />
-              </div>
-              <div className="form-group">
-                <input
-                  type="text"
+              </LabelInputContainer>
+
+              <LabelInputContainer className="mb-4">
+                {/* <Label htmlFor="email">Email Address</Label> */}
+                <Input
+                  type="email"
                   id="email"
                   name="email"
                   placeholder="Email"
                   required
                 />
-              </div>
-              <div className="form-group">
-                <input
+              </LabelInputContainer>
+
+              <LabelInputContainer className="mb-4">
+                {/* <Label htmlFor="subject">Subject</Label> */}
+                <Input
                   type="text"
-                  id="text"
-                  name="text"
+                  className="focus:outline-none focus:ring-0 focus:border-transparent"
+                  id="subject"
+                  name="subject"
                   placeholder="Subject"
                   required
                 />
-              </div>
-              <div className="form-group">
+              </LabelInputContainer>
+
+              <LabelInputContainer className="mb-8">
+                {/* <Label htmlFor="message">Your Message</Label> */}
                 <textarea
                   id="message"
                   name="message"
                   rows="4"
                   placeholder="Your Message"
                   required
+                  className="input" // Ensure styling is consistent for textareas
                 ></textarea>
-              </div>
-              <div className="form-group">
-                <button type="submit" id="sumbit">
-                  Send
-                </button>
-                {/* </div> */}
-              </div>
+              </LabelInputContainer>
+
+              <LabelInputContainer className="w-max">
+                <Input
+                  type="submit"
+                  id="submit"
+                  value="Send"
+                  className="w-max px-20 py-2 rounded-5 bg-[#000000] text-[white]"
+                   />
+              </LabelInputContainer>
+
             </form>
           </div>
         </div>

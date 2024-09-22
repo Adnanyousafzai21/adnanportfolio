@@ -8,7 +8,7 @@ const About = () => {
   return (
     <Navbar>
       {/* <ShootingStarsAndStarsBackgroundDemo> */}
-      <section className=" w-full  flex justify-center h-atuo  items-center lg:h-[450px] xsm:px-10">
+      <section className=" w-full  flex justify-center h-atuo slide-up-animation items-center lg:h-[450px] xsm:px-10">
         <div className=" w-full flex flex-col lg:flex-row   justify-between items-center gap-10 lg:gap-10 ">
           <div className="md:w-[350px]   sm:w-[450px] w-[100%] relative z-10 ">
             <ThreeDCardDemo />
