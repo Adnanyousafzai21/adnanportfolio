@@ -76,12 +76,12 @@ export default function MyModal({ isOpen, setIsOpen, activeItem }) {
                                         >
                                             Cancel
                                         </button>
-                                        <button
+                                        <a target='_blank' href={activeItem?.link}
                                             type="button"
                                             className="text-white bg-blue-400 hover:bg-blue-600 focus:outline-none focus:ring-blue-300 font-medium rounded-[6px] text-sm px-5 py-2 text-center " onClick={closeModal}
                                         >
                                             View
-                                        </button>
+                                        </a>
                                     </div>
                                     </div>
                               

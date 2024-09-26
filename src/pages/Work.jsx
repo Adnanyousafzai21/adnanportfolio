@@ -41,8 +41,28 @@ const Work = () => {
         "this is under development is has still have some functionalty missing comming verry soon",
 
     },
+
     {
       id: 3,
+      imag: "/images/gallery-photo.PNG",
+      link: "https://photogalleryui.vercel.app/",
+      proname: "Photo Gallery",
+      techname: "Mern-Stack",
+      discription:
+        `Authentication: Only registered and authorized users have the privilege to upload and organize images. Public can view public images only (Newsfeed route).
+Uploads: Users have the capability to create boxes and upload multiple images simultaneously.
+
+Privacy Controls:
+Images privacy: Users can control individual image visibility (public or private).
+
+Box Privacy: When a box is marked as private, Newsfeed contained within it automatically become private.
+Deletion box: Deleting a box removes all associated images.
+Deletion of Images: Deleted images will delt from all areas of the application.
+The public boxes can showing in Newsfeed route as well if necessary.`
+
+    },
+    {
+      id: 4,
       imag: "/images/addcontact.PNG",
       link: "https://contact-list-bice-zeta.vercel.app/",
       proname: "Contact list",
@@ -51,7 +71,7 @@ const Work = () => {
         "I made this website with tailwind css Nextjs , redux I also created the same project with react redux and tailwind css but not published yet",
     },
     {
-      id: 4,
+      id: 5,
       imag: "/images/joobseeker.PNG",
       link: "https://jobseekerfrontend.vercel.app",
       proname: "Job Seeker",
@@ -61,7 +81,7 @@ const Work = () => {
     },
 
     {
-      id: 5,
+      id: 6,
       imag: "/images/todo.PNG",
       link: "https://adnanyousafzai21.github.io/Todo_List/",
 
@@ -70,15 +90,7 @@ const Work = () => {
       discription:
         "I made this website with tailwind css Nextjs , redux I also created the same project with react redux and tailwind css but not published yet",
     },
-    {
-      id: 6,
-      imag: "/images/texttot.PNG",
-      link: "https://textandcolorproperties.netlify.app/",
-      proname: "Text editor",
-      techname: "Reactjs",
-      discription:
-        "I made this website with tailwind css Nextjs , redux I also created the same project with react redux and tailwind css but not published yet",
-    },
+
   ];
   return (
     <Navbar>
@@ -116,12 +128,12 @@ const Work = () => {
                   </div>
                   <div className="flex items-center justify-between">
                     <a href="#" className="text-white bg-blue-400 hover:bg-blue-600 focus:outline-none focus:ring-blue-300 font-medium rounded-[6px] text-sm px-5 py-2 text-center "
-                     onClick={()=>{ setIsOpen(true),setActiveItem(item)}}> Details </a>
+                      onClick={() => { setIsOpen(true), setActiveItem(item) }}> Details </a>
                     <a href="#" className="text-white bg-blue-400 hover:bg-blue-600 focus:outline-none focus:ring-blue-300 font-medium rounded-[6px] text-sm px-5 py-2 text-center ">View</a>
                   </div>
                 </div>
               </div>
-              <div className="lg:hidden w-full lg:max-w-[30%] md:w-[40%] xsm:w-[280px]  card rounded-lg shadow   z-20 bg-[#000000] sm:bg-[#101a24]" key={item.id}   data-aos={`${item.id%2==0?"fade-right":"fade-left"}`}>
+              <div className="lg:hidden w-full lg:max-w-[30%] md:w-[40%] xsm:w-[280px]  card rounded-lg shadow   z-20 bg-[#000000] sm:bg-[#101a24]" key={item.id} data-aos={`${item.id % 2 == 0 ? "fade-right" : "fade-left"}`}>
                 <img className=" w-full rounded-t-lg h-[200px]" src={item.imag} alt="product image" />
 
                 <div className="px-5 py-2 w-full">
@@ -150,7 +162,7 @@ const Work = () => {
                   </div>
                   <div className="flex items-center justify-between">
                     <a href="#" className="text-white bg-blue-400 hover:bg-blue-600 focus:outline-none focus:ring-blue-300 font-medium rounded-[6px] text-sm px-5 py-2 text-center "
-                      onClick={()=>{ setIsOpen(true),setActiveItem(item)}}>  Details </a>
+                      onClick={() => { setIsOpen(true), setActiveItem(item) }}>  Details </a>
                     <a href="#" className="text-white bg-blue-400 hover:bg-blue-600 focus:outline-none focus:ring-blue-300 font-medium rounded-[6px] text-sm px-5 py-2 text-center ">View</a>
                   </div>
                 </div>
