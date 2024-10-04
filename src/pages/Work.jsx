@@ -94,8 +94,10 @@ The public boxes can showing in Newsfeed route as well if necessary.`
   ];
   return (
     <Navbar>
+      <p className="text-center pb-1 py-2 lg:px-5 lg:py-3">Projects I Completed Before Gaining any Professional  Experience – Now With Over a Year of Expertise</p>
       <div className="card-contianer  
       py-2 sm:px-5 px-8 md:px-10 overflow-hidden z-20 relative ">
+        
         {data.map((item) => {
           return (
             <>
@@ -163,7 +165,7 @@ The public boxes can showing in Newsfeed route as well if necessary.`
                   <div className="flex items-center justify-between">
                     <a href="#" className="text-white bg-blue-400 hover:bg-blue-600 focus:outline-none focus:ring-blue-300 font-medium rounded-[6px] text-sm px-5 py-2 text-center "
                       onClick={() => { setIsOpen(true), setActiveItem(item) }}>  Details </a>
-                    <a href="#" className="text-white bg-blue-400 hover:bg-blue-600 focus:outline-none focus:ring-blue-300 font-medium rounded-[6px] text-sm px-5 py-2 text-center ">View</a>
+                    <a href={item?.link} className="text-white bg-blue-400 hover:bg-blue-600 focus:outline-none focus:ring-blue-300 font-medium rounded-[6px] text-sm px-5 py-2 text-center ">View</a>
                   </div>
                 </div>
               </div>

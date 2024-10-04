@@ -25,7 +25,11 @@ const About = () => {
               <div className="min-h-[150px]">
                 <TypeAnimation
                   sequence={[
-                    " MY self Adnan Rafiq Mern-stack developer with a strong appetite for learning and growth. 👨‍💼  With almost a year of professional experience, including successful internships, 🛠️my expertise lies in TypeScript, JavaScript, React.js, and Next.js on the front-end. On the back-end, I excel in Node.js, Express.js, and MongoDB. 🎓 Currently, I'm in my final year of pursuing a bachelor's degree in Computer Science, along with having completed comprehensive web and app development training at SMIT, and exploring cutting-edge technologies like blockchain, web3, and the metaverse through PIAIC.",
+                    `I'm Adnan Rafiq, a MERN-stack developer with a strong passion for learning and growth. With more than a year of experience, I specialize in front-end development using TypeScript, JavaScript, React.js, and Next.js, while on the back-end, I excel in Node.js, Express.js, and MongoDB.
+
+I'm currently in my last semester of a bachelor's degree in Computer Science and have completed comprehensive web and app development training at SMIT. I'm also exploring the latest technologies like blockchain, web3, and the metaverse through PIAIC.
+
+Before gaining professional experience, I built several projects to sharpen my skills in mern-stack included in work section of the portfolio.`,
                     1000,
                   ]}
                   wrapper="span"
