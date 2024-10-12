@@ -3,79 +3,29 @@ import Navbar from "../components/navbar";
 
 const Resume = () => {
   return (
-    <div>
+    <div  >
       <Navbar>
-        {/* <section className="resume-container">
-          <div className="education">
-            <h2>Education</h2>
-            <div className="education-item">
-              <p>2016 - 2018</p>
-              <h3>Matriculation</h3>
-              <p>
-                I have done Matriculation with good marks and lots of knowledge.
-              </p>
-            </div>
-            <div className="education-item">
-              <p>2018 - 2020</p>
-              <h3>Intermediate</h3>
-              <p>
-                I have done Intermediate with good marks and lots of knowledge.
-              </p>
-            </div>
-            <div className="education-item">
-              <p>2020 - Currently</p>
-              <h3>Undergraduate</h3>
-              <p>I am Undergraduate in Artificial Intelligence.</p>
-            </div>
-            <div className="education-item">
-              <p>2019</p>
-              <h3>Web Development</h3>
-              <p>
-                I learned Web Development with YouTube. I did not go to any
-                institute to learn web development because YouTube is the most
-                popular social platform to learn new things...
-              </p>
-            </div>
+        <div className="w-full relative z-50 flex flex-col justify-center items-center">
+          <div
+            className="lg:w-[80%] sm:w-[90%]  px-2 sm:px-auto w-full  pt-5 mb-2 relative z-50 rounded-[10px] overflow-hidden"
+          >
+            <img
+              src="/images/Men-stack developer cv.jpg"
+              className="w-full rounded"
+            >
+            </img>
           </div>
-          <div className="skills">
-            <h2>Skills</h2>
-            </div>
-            <div className="skills-list">
-   
-          <div className="skill-item">TypeScript</div>
-          <div className="skill-item">Next.js</div>
-          <div className="skill-item">Tailwind CSS</div>
-          <div className="skill-item">Node.js</div>
-          <div className="skill-item">Express.js</div>
-          <div className="skill-item">MongoDB</div>
+          <a
+            href="/images/Men-stack developer cv.pdf"
+            download
+            className="text-white bg-blue-400 px-5 hover:bg-blue-600 focus:outline-none focus:ring-blue-300 font-medium rounded-[6px] text-sm px-5 py-2 text-center"
+          >
+            Download Cv
+          </a>
+
         </div>
-    
-          <div className="experience">
-            <h2>Experience</h2>
-            <div className="experience-item">
-              <p>
-                I am doing a job since Nov, 2020 in KCompute. I have good
-                experience in React.js. I have done work on multiple projects in
-                React.js. I get daily tasks and I do them on time. I am able to
-                handle multiple tasks on a daily basis. I use a creative
-                approach to problem solve. I am always energetic and eager to
-                learn new skills. I have experience working as part of a team
-                and individually.
-              </p>
-            </div>
-            <div className="experience-item">
-              <p>
-                I have done work on a few freelance projects with my friend. We
-                designed these projects on Vue.js with Vuetify theme. This was a
-                good experience to learn Vue and design web applications.
-              </p>
-            </div>
-          </div>
-        </section> */}
-        {/* <h1</h3> */}
-        <h1 style={{color:"#fff"}}>Comming Soon.............</h1>
-        
       </Navbar>
+
     </div>
   );
 };

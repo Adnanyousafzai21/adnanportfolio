@@ -16,7 +16,7 @@ const About = () => {
 
           <div className="md:w-[70%] w-full flex jusitfy-center  h-auto bg-transparent relative z-10">
 
-            <div className="text flex flex-col items-center lg:items-start">
+            <div className="text flex flex-col items-center lg:items-start ">
               <h4>About Me</h4>
               <div></div>
               <h5>
@@ -47,10 +47,15 @@ Before gaining professional experience, I built several projects to sharpen my s
                 />
 
               </div>
-              <div className="data ">
-                <a href="#" className="hire">
-                  Download CV
+              <div className="data relative z-50 ">
+                <a
+                  href="/images/Men-stack developer cv.pdf"
+                  download
+                  className="text-white bg-blue-400  px-5 hover:bg-blue-600 focus:outline-none focus:ring-blue-300 font-medium rounded-[6px] text-sm px-5 py-2 text-center"
+                >
+                  Download Cv
                 </a>
+
               </div>
             </div>
           </div>
