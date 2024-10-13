@@ -35,10 +35,14 @@ body {
   --buttonradius: 5px;
   --boxshadowhover: 0 3px 3px -2px rgba(175, 175, 175, 0.966), 0 2px 2px 0 rgba(233, 233, 233, 0.349), 0 1px 5px 0 rgb(159, 155, 155);
 }
-p{
-  color:var(--para)
+
+p {
+  color: var(--para)
 }
-h1, h2 ,h3{
+
+h1,
+h2,
+h3 {
   color: var(--heading);
 }
 
@@ -62,7 +66,7 @@ h1, h2 ,h3{
   /* Light blue color for the thumb */
   border-radius: 10px;
   /* Rounded corners for the thumb */
-  border: 2px solid #999999   ;
+  border: 2px solid #999999;
   /* Border around the thumb matching the track */
 }
 
@@ -70,11 +74,13 @@ h1, h2 ,h3{
   background-color: #000000;
   /* Darker blue on hover */
 }
+
 @keyframes slideUp {
   0% {
     transform: translateY(50px);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
@@ -85,11 +91,13 @@ h1, h2 ,h3{
 .slide-up-animation {
   animation: slideUp 1s ease-out forwards;
 }
+
 @keyframes slideUp {
   0% {
     transform: translateY(50px);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
@@ -108,20 +116,24 @@ h1, h2 ,h3{
   border-radius: 10px;
 
 }
-.bg-pro{
-animation:non;
-  background: conic-gradient(from 90deg at 50% 50%, #ff7f50, var(--buttontext), rgba(235, 14, 14, 0.986), #00ff7f,  #dde010c9);
+
+.bg-pro {
+  animation: non;
+  background: conic-gradient(from 90deg at 50% 50%, #ff7f50, var(--buttontext), rgba(235, 14, 14, 0.986), #00ff7f, #dde010c9);
 }
+
 @keyframes rotateBackground {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
 
-.bg-pro-parent:hover, .bg-pro{
+.bg-pro-parent:hover,
+.bg-pro {
   animation: rotateBackground 2s linear infinite;
 }
 
@@ -264,7 +276,7 @@ animation:non;
 
 .socialmediaapp:hover {
   transform: scale(1.1);
-  background:var(--buttoncolor);
+  background: var(--buttoncolor);
 }
 
 .right {
@@ -319,20 +331,23 @@ animation:non;
   border: 1px solid transparent;
   transition: all 0.5s linear;
   font-size: 14px;
-  padding:5px 10px;
-  margin:auto 5px;
-  gap:10px
+  padding: 5px 10px;
+  margin: auto 5px;
+  gap: 10px;
+  border: 1px solid #60A5FA;
 }
 
 
 .nav .list a:hover {
-  background-color: #000000
+  background-color: #93C5FD
 }
 
 .nav .list .active {
   /* border: 1px solid rgba(0, 0, 255, 0.596); */
-  border: 1px solid skyblue;
-  background-color: #000000
+
+  background-color: #60A5FA;
+  color: white;
+
 }
 
 .border {
@@ -446,7 +461,7 @@ span {
   /* width: 28%; */
   border-radius: 10px;
   padding-bottom: 10px;
-  box-shadow:  var(--boxshadowhover);
+  box-shadow: var(--boxshadowhover);
 
 
 }
@@ -608,9 +623,9 @@ h3 {
   flex: 1;
   padding: 0px 50px;
   text-align: center;
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 input[type="text"],
@@ -634,7 +649,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.5s linear;
-  
+
 }
 
 button:hover {
@@ -714,9 +729,9 @@ button:hover {
   .nav .list a {
     /* width: 80px; */
     font-size: 14px;
-    padding:5px 20px;
-    margin:auto 5px;
-    gap:15px
+    padding: 5px 20px;
+    margin: auto 5px;
+    gap: 15px
   }
 
   .hero-left .image {

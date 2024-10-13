@@ -1,8 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Navbar from "../components/navbar";
 import MyModal from "../components/modal";
+import NotificationModal from "../components/notificationModal";
+import { MyContext } from "../components/Context";
+
 
 const Work = () => {
   const [activeItem, setActiveItem] = useState(null)
@@ -12,6 +15,7 @@ const Work = () => {
       once: false,
     });
   }, []);
+  const { isModalOpen, setIsModalOpen } = useContext(MyContext);
 
   let [isOpen, setIsOpen] = useState(false)
   function openModal(item) {
@@ -28,7 +32,7 @@ const Work = () => {
       proname: "E-comerce Website",
       techname: "Nextjs Redux",
       discription:
-        "I made this website with tailwind css Nextjs , redux I also created the same project with react redux and tailwind css but not published yet",
+        "E-commerce website allows users to browse products, view detailed descriptions, and easily add items to their cart for a seamless shopping experience. created.",
     },
     {
       id: 2,
@@ -38,7 +42,7 @@ const Work = () => {
       proname: "social media app",
       techname: "React, node, mongodb",
       discription:
-        "this is under development is has still have some functionalty missing comming verry soon",
+        "Social media app allows users to post, delete, update, comment, like, and share text, videos, and photos. It includes authentication and authorization features for secure user interactions.",
 
     },
 
@@ -49,16 +53,13 @@ const Work = () => {
       proname: "Photo Gallery",
       techname: "Mern-Stack",
       discription:
-        `Authentication: Only registered and authorized users have the privilege to upload and organize images. Public can view public images only (Newsfeed route).
-Uploads: Users have the capability to create boxes and upload multiple images simultaneously.
+        `Authentication: Only registered users can upload/manage images; public users can view public images on the Newsfeed.
 
-Privacy Controls:
-Images privacy: Users can control individual image visibility (public or private).
-
-Box Privacy: When a box is marked as private, Newsfeed contained within it automatically become private.
-Deletion box: Deleting a box removes all associated images.
-Deletion of Images: Deleted images will delt from all areas of the application.
-The public boxes can showing in Newsfeed route as well if necessary.`
+Uploads: Users can create folders and upload images.
+Privacy:
+Control image visibility (public/private).
+Private folders hide all images inside.
+Deleting a folder or image removes them across the app.`
 
     },
     {
@@ -68,7 +69,7 @@ The public boxes can showing in Newsfeed route as well if necessary.`
       proname: "Contact list",
       techname: "Nextjs Redux Express",
       discription:
-        "I made this website with tailwind css Nextjs , redux I also created the same project with react redux and tailwind css but not published yet",
+        "During my early learning, I built a React web app for managing contacts, enabling users to save, edit, and delete contact information.",
     },
     {
       id: 5,
@@ -77,7 +78,7 @@ The public boxes can showing in Newsfeed route as well if necessary.`
       proname: "Job Seeker",
       techname: "MERN stack",
       discription:
-        "Included each and every functionallity ,like post edit delete job and application include role for both employee and jobseeker and many more",
+        "I developed a web application for job seekers where employers can share job postings, and job seekers can search for opportunities. Authenticated users have the ability to both post and search for jobs.",
     },
 
     {
@@ -88,16 +89,15 @@ The public boxes can showing in Newsfeed route as well if necessary.`
       proname: "ToDo list",
       techname: "React, Express",
       discription:
-        "I made this website with tailwind css Nextjs , redux I also created the same project with react redux and tailwind css but not published yet",
+        "In my initial days of learning, I created a to-do app that allows users to add, edit, and delete items, providing a simple way to manage tasks.",
     },
 
   ];
   return (
     <Navbar>
-      <p className="text-center pb-1 py-2 lg:px-5 lg:py-3">Projects I Completed Before Gaining any Professional  Experience – Now With Over a Year of Expertise</p>
       <div className="card-contianer  
       py-2 sm:px-5 px-8 md:px-10 overflow-hidden z-20 relative ">
-        
+
         {data.map((item) => {
           return (
             <>
@@ -174,6 +174,8 @@ The public boxes can showing in Newsfeed route as well if necessary.`
         })}
       </div>
       <MyModal isOpen={isOpen} setIsOpen={setIsOpen} activeItem={activeItem} />
+
+      <NotificationModal setIsModalOpen={setIsModalOpen} isModalOpen={isModalOpen}  />
     </Navbar>
   );
 };
