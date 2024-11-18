@@ -27,7 +27,9 @@ const Work = () => {
     {
       id: 1,
 
-      imag: "/images/e-comrace.PNG",
+      // imag: "/images/e-comrace.PNG",
+      // imag: "/images/e-comerce.PNG",
+      imag: "/images/e-comerce-1.PNG",
       link: "https://hakthonpro.vercel.app/",
       proname: "E-comerce Website",
       techname: "Nextjs Redux",
@@ -37,7 +39,7 @@ const Work = () => {
     {
       id: 2,
 
-      imag: "/images/social media.PNG",
+      imag: "/images/social media.jpg",
       link: "https://socailmediaapp.vercel.app/",
       proname: "social media app",
       techname: "React, node, mongodb",
@@ -64,6 +66,15 @@ Deleting a folder or image removes them across the app.`
     },
     {
       id: 4,
+      imag: "/images/fullCrud-3.PNG",
+      link: "https://fullauthrized-crud.vercel.app//",
+      proname: "FullAuthorizedCrud",
+      techname: "Nextjs Express MongoDB",
+      discription:
+        "This is a secure CRUD app with authentication and password recovery. If registered with a valid email, you'll receive a 6-digit code to reset your password. You can create, view, edit, and delete activities with subjects, descriptions, and file attachments, while managing your own data in a dark/light theme."
+    },
+    {
+      id: 5,
       imag: "/images/addcontact.PNG",
       link: "https://contact-list-bice-zeta.vercel.app/",
       proname: "Contact list",
@@ -71,8 +82,9 @@ Deleting a folder or image removes them across the app.`
       discription:
         "During my early learning, I built a React web app for managing contacts, enabling users to save, edit, and delete contact information.",
     },
+
     {
-      id: 5,
+      id: 6,
       imag: "/images/joobseeker.PNG",
       link: "https://jobseekerfrontend.vercel.app",
       proname: "Job Seeker",
@@ -82,7 +94,7 @@ Deleting a folder or image removes them across the app.`
     },
 
     {
-      id: 6,
+      id: 7,
       imag: "/images/todo.PNG",
       link: "https://adnanyousafzai21.github.io/Todo_List/",
 

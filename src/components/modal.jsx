@@ -37,12 +37,12 @@ export default function MyModal({ isOpen, setIsOpen, activeItem }) {
                                 leaveFrom="opacity-100 scale-100"
                                 leaveTo="opacity-0 scale-95"
                             >
-                                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white  text-left align-middle shadow-xl transition-all bg-[#101a24] border border-skyblue-600">
+                                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl text-left align-middle shadow-xl transition-all bg-[#101a24] border border-skyblue-600">
 
-                                    <div className=" w-full  mb-2 rounded-lg shadow    " key={activeItem?.id} >
-                                        <img className=" w-full rounded-t-lg  h-[150px] lg:h-[250px]" src={activeItem?.imag} alt="product image" />
+                                    <div className=" w-full rounded-lg shadow    " key={activeItem?.id} >
+                                        <img className=" w-full rounded-t-lg  h-[120px] lg:h-[200px]" src={activeItem?.imag} alt="product image" />
 
-                                        <div className="px-5 py-1 md:py-2 w-full ">
+                                        <div className="px-1 py-1 md:py-2 w-full  ">
 
                                             <h5 className="text-xl font-semibold text-center tracking-tight  text-white py-1 md:py-2">{activeItem?.proname}</h5>
 
@@ -69,7 +69,7 @@ export default function MyModal({ isOpen, setIsOpen, activeItem }) {
 
                                             </div>
                                             <p className="text-center">{activeItem?.discription}</p>
-                                            <div className="mt-4 flex justify-between">
+                                            <div className="mt-4 flex pb-2 px-2 justify-between">
                                                 <button
                                                     type="button"
                                                     className="text-white bg-blue-400 hover:bg-blue-600 focus:outline-none focus:ring-blue-300 font-medium rounded-[6px] text-sm px-5 py-2 text-center " onClick={closeModal}
