@@ -65,6 +65,8 @@ const Herosection = () => {
                     1000,
                     " a BSCS Graduate",
                     1000,
+                    " a React-Native developer",
+                    1000,
                     "1.5 year of Experienced",
                     1000,
                   ]}
