@@ -67,7 +67,7 @@ const Herosection = () => {
                     1000,
                     " a React-Native developer",
                     1000,
-                    "1.5 year of Experienced",
+                    "2 year of Experienced",
                     1000,
                   ]}
                   wrapper="span"
